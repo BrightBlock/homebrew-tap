@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-require "download_strategy"
+require_relative "../custom_download_strategy"
 
 class Hyprlayer < Formula
   desc "CLI tool for Hyprlayer"
