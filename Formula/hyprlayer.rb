@@ -1,6 +1,8 @@
 # typed: false
 # frozen_string_literal: true
 
+require "download_strategy"
+
 class Hyprlayer < Formula
   desc "CLI tool for Hyprlayer"
   homepage "https://github.com/BrightBlock/hyprlayer-cli"
