@@ -19,11 +19,28 @@ class GitHubPrivateRepositoryReleaseDownloadStrategy < CurlDownloadStrategy
   private
 
   def _fetch(url:, resolved_url:, timeout:)
-    curl_download download_url, to: temporary_path
-  end
+    # Use GitHub API to get the asset's download URL, then download with auth headers
+    api_url = "https://api.github.com/repos/#{@owner}/#{@repo}/releases/tags/#{@tag}"
+    assets_json = Utils.popen_read(
+      "curl", "-fsSL",
+      "-H", "Authorization: token #{@github_token}",
+      "-H", "Accept: application/vnd.github+json",
+      api_url
+    )
 
-  def download_url
-    "https://#{@github_token}@github.com/#{@owner}/#{@repo}/releases/download/#{@tag}/#{@filename}"
+    require "json"
+    release = JSON.parse(assets_json)
+    asset = release.fetch("assets").find { |a| a["name"] == @filename }
+    raise CurlDownloadStrategyError, "Asset #{@filename} not found in release #{@tag}" unless asset
+
+    asset_url = asset.fetch("url")
+
+    curl_download(
+      asset_url,
+      "--header", "Authorization: token #{@github_token}",
+      "--header", "Accept: application/octet-stream",
+      to: temporary_path
+    )
   end
 
   def set_github_token
