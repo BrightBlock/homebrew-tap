@@ -13,7 +13,7 @@ class Hyprlayer < Formula
     on_arm do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-aarch64-apple-darwin",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "b8b669e92040b3f28f88d107da0e7b657f84ddaa2565c1b214a4449448a5cf3f"
+      sha256 "9b9db618f0b4aaea93711fb2e50c9df85a12546d8176be552df05d8afa6ada7b"
     end
   end
 
@@ -21,13 +21,13 @@ class Hyprlayer < Formula
     on_arm do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-aarch64-unknown-linux-gnu",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "c3a693e32d79997b59572c06fd5abaf2eca7fc4a52315c6ebdf9641845952d81"
+      sha256 "ae36bae0e911abd4ab83fbd96b475197d6387024e730b86f0353dccd7ded1a28"
     end
 
     on_intel do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-x86_64-unknown-linux-gnu",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "8f194a6fdde4c2f2b020dc245bf3c02dde1331d1e02f4b3fea5d5e37b8c7fa6f"
+      sha256 "a1b5320aa1c1d30fe866b28eb98b0441ffa440cc30b7cb08b7cb1789f2ed2ca6"
     end
   end
 
