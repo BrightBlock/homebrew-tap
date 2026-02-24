@@ -6,14 +6,14 @@ require_relative "../custom_download_strategy"
 class Hyprlayer < Formula
   desc "CLI tool for Hyprlayer"
   homepage "https://github.com/BrightBlock/hyprlayer-cli"
-  version "1.3.6"
+  version "1.3.7"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-aarch64-apple-darwin",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "79c2aedd4225bb153113fd299af0892ac8422036f00cc2cfa88515720ca91c75"
+      sha256 "b8b669e92040b3f28f88d107da0e7b657f84ddaa2565c1b214a4449448a5cf3f"
     end
   end
 
@@ -21,13 +21,13 @@ class Hyprlayer < Formula
     on_arm do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-aarch64-unknown-linux-gnu",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "519efd276a4c58977d8db95632340029e826572cb17adf19955f5d8fcf90a3db"
+      sha256 "c3a693e32d79997b59572c06fd5abaf2eca7fc4a52315c6ebdf9641845952d81"
     end
 
     on_intel do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-x86_64-unknown-linux-gnu",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "f0c4fc1f0085c11bb3a19c665cc49ad261396d59f2f5b027771e60f0d1fcfed1"
+      sha256 "8f194a6fdde4c2f2b020dc245bf3c02dde1331d1e02f4b3fea5d5e37b8c7fa6f"
     end
   end
 
