@@ -4,25 +4,25 @@
 class Hyprlayer < Formula
   desc "CLI tool for Hyprlayer"
   homepage "https://github.com/BrightBlock/hyprlayer-cli"
-  version "1.4.5"
+  version "1.4.6"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-aarch64-apple-darwin"
-      sha256 "d517478edf92d9b175af95eaaab38fe81986146fc83d0af800f64b0845e31e33"
+      sha256 "14c9bbf9e6fcd7d276fbb461756dc27cf44e93623459ddc30013751955e272c9"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-aarch64-unknown-linux-gnu"
-      sha256 "143839e3a4b94dc9dc9ed6fa324a609794de804d7fdc3ff38742b8e62c6594cb"
+      sha256 "ba5b8b358b09a0826574a5f5ba22c6a3b4feba580e7fcd8aa560eb1f456a2938"
     end
 
     on_intel do
       url "https://github.com/BrightBlock/hyprlayer-cli/releases/download/v#{version}/hyprlayer-x86_64-unknown-linux-gnu"
-      sha256 "2b1c878efdf7394bdfb94988280e6ef51e1c0031703ba946a941148d5ee80f8e"
+      sha256 "ed15d207354d50007973821dd4c2dd9d7cc9f83802290f6bded6dfe5fcf5df19"
     end
   end
 
