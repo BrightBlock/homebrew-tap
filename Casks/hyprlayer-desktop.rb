@@ -1,8 +1,8 @@
 cask "hyprlayer-desktop" do
-  version "0.1.0"
-  sha256 "308b876cd947c5e235004a2f70a3208cc6d2f44c989e49958a96d41608175171"
+  version "0.1.1"
+  sha256 "2a5b4e644269006a86f29fb86a135d5385f405dd2e12928ec33c48a053d44e0a"
 
-  url "https://github.com/BrightBlock/hyprlayer-releases/releases/download/v#{version}/Hyprlayer_#{version}_universal.dmg"
+  url "https://github.com/BrightBlock/hyprlayer-releases/releases/download/v#{version}/Hyprlayer_#{version}_aarch64.dmg"
   name "Hyprlayer"
   desc "Native desktop app for spec-driven development"
   homepage "https://brightblock.ai/hyprlayer/"
