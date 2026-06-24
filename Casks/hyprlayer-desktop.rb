@@ -12,15 +12,4 @@ cask "hyprlayer-desktop" do
   auto_updates true
 
   app "Hyprlayer.app"
-
-  caveats <<~CAVEATS
-    Hyprlayer is not yet notarized by Apple, so on first launch macOS may block
-    it with "Apple cannot check it for malicious software." To allow it:
-
-      xattr -dr com.apple.quarantine "/Applications/Hyprlayer.app"
-
-    or install without quarantine up front:
-
-      brew install --cask --no-quarantine hyprlayer-desktop
-  CAVEATS
 end
