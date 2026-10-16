@@ -8,20 +8,20 @@
 class HyprlayerServer < Formula
   desc "Hyprlayer runtime as a headless server, reached over a local socket or SSH"
   homepage "https://brightblock.ai/hyprlayer"
-  version "0.8.12"
+  version "0.8.13"
   license :cannot_represent
 
   on_macos do
     on_arm do
       url "https://github.com/BrightBlock/hyprlayer-releases/releases/download/server-v#{version}/hyprlayer-server-aarch64-apple-darwin"
-      sha256 "c9c21215d835968fbfe055bae86632b5792670f44e0944ddd25ccc66a6a39220"
+      sha256 "a64939d3bc980a2580553525f2a0b0bfeb3f5b684281e3f8727419f7974a56a8"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/BrightBlock/hyprlayer-releases/releases/download/server-v#{version}/hyprlayer-server-x86_64-unknown-linux-gnu"
-      sha256 "9c139c6e17ce20a8acc4d2ddd249e872e3d3a9f2865ca2a213f5f0564a24ebee"
+      sha256 "7593271c0bd759528aa74f7a861b8c4d25fa12e78ceec023028dde2d0e77389a"
     end
   end
 
