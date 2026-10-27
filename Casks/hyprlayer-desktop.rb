@@ -1,6 +1,6 @@
 cask "hyprlayer-desktop" do
-  version "0.8.19"
-  sha256 "8893bd3c45ad182684cd5b0392b74f3b60f825607af00d01d912315def839601"
+  version "0.8.20"
+  sha256 "f96a64a64d490a6ff13ebb8f1984aee7c301f851bda5b11512d578321e010622"
 
   url "https://github.com/BrightBlock/hyprlayer-releases/releases/download/v#{version}/Hyprlayer_#{version}_aarch64.dmg"
   name "Hyprlayer"
