@@ -5,7 +5,7 @@ class Hyprlayer < Formula
   desc "CLI tool for Hyprlayer"
   homepage "https://github.com/BrightBlock/hyprlayer-cli"
   version "1.6.4"
-  license "MIT"
+  license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
